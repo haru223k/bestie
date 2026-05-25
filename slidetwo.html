@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 300;
+      height: 150;
+      border: 1px solid black;
+      margin: 20px auto;
+    }
+  </style>
+  <body>
+    <div class="container bg">
+      <section class="slide2forhm ">
+        <img class="slide2" src="images/CatLoveStickerbyMixFlavor-ezgif.com-loop-count.gif" alt="" >
+        <img class="mybestie border" src="images/erasebg-transformed.png" alt="">
+          <img class="mybestie photo" src="images/image.png" alt="" />
+        <p>နင်လဲ ငါ့ကို အချစ်ဆုံးဆိုတော့</p>
+        <p>မုန့်ဝယ်ကျွေးချင်နေမှာပေါ့</p>
+        <a href="#"><span>Yes</span> </a>
+       <a id="noBtn" href="#"><span>No</span> </a>
+      </section>
+    </div>
+
+
+   <script>
+    const noBtn = document.getElementById('noBtn');
+
+    noBtn.addEventListener('mouseover', function() {
+        
+        noBtn.style.position = 'absolute';
+
+        
+        const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+        const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+
+        
+        noBtn.style.left = `${x}px`;
+        noBtn.style.top = `${y}px`;
+    });
+</script>
+  </body>
+</html>
