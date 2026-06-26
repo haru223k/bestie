@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        /* Screen တစ်ခုလုံးကို အလယ်တည့်တည့် ပို့ထားတဲ့ Style */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff; /* နောက်ခံအဖြူရောင် */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        /* လည်နေမယ့် စက်ဝိုင်းပုံ (Spinner) */
+        .spinner {
+            width: 55px;
+            height: 55px;
+            border: 5px solid rgba(12, 47, 121, 0.1);
+            border-top: 5px solid #0c2f79; /* မင်းရဲ့ Theme အပြာရင့်ရောင် */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* "ခဏစောင့်ပေးပါ..." စာသား */
+        .loading-text {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #0c2f79;
+            font-weight: bold;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="spinner"></div>
+    <p class="loading-text">၀ယ်ကျွေးချင်တဲ့ menu ကို ရွေးချယ်ပေးရန် ၊ ခဏစောင့်ပေးပါ...</p>
+
+    <script>
+        // စာမျက်နှာပွင့်ပြီး (၂ စက္ကန့်) ပြည့်တာနဲ့ slidethree.html ကို အလိုအလျောက် ပြောင်းသွားစေမယ့် Logic
+        setTimeout(function() {
+            window.location.href = "slidethree.html"; 
+        }, 3000); //3000 မီလီစက္ကန့် = 3 စက္ကန့် (ကြိုက်သလို တိုး/လျှော့ လုပ်နိုင်ပါတယ်)
+    </script>
+
+</body>
+</html>

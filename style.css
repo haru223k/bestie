@@ -12,6 +12,8 @@
 .home p {
   color: #6680a3;
   font-size: 56px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  
 }
 .koko {
   width: 400px;
@@ -19,9 +21,7 @@
   position: absolute;
   left: 67%;
   top: 7%;
-  
 }
-
 
 .myfir {
   width: 172px;
@@ -29,49 +29,46 @@
   position: absolute;
   left: 72%;
   top: 47%;
-  box-shadow: 5px 5px 15px rgba(0, 0 , 0, 0.9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
-.home span,.slide2forhm span{
+.home span,
+.slide2forhm span {
   display: inline-block;
   transform: skew(20deg);
 }
-.home a{
+.home a {
   display: inline-block;
-  width: 150px ;
+  width: 150px;
   height: 40px;
   line-height: 40px;
   margin: 20px;
-  
+
   color: #fff;
   background-color: black;
   text-decoration: none;
   text-align: center;
   transform: skew(-20deg);
   border-radius: 6px;
-  
-
 }
 .slide2 {
   width: 230px;
   height: auto;
   position: absolute;
- left: 40%;
- top: 13%;
- 
+  left: 40%;
+  top: 13%;
 }
 
 .slide2forhm p {
   position: relative;
   color: #6680a3;
   font-size: 56px;
-top: 23%;
+  top: 23%;
 }
 
-.slide2forhm a{
-
+.slide2forhm a ,#choosebtn  {
   position: relative;
-display: inline-block;
-  width: 150px ;
+  display: inline-block;
+  width: 150px;
   height: 40px;
   line-height: 40px;
   top: 10%;
@@ -83,11 +80,9 @@ display: inline-block;
   text-align: center;
   transform: skew(-20deg);
   border-radius: 6px;
-  
+}
 
-} 
-
-#noBtn{
+#noBtn {
   position: relative;
   transition: all 0.1s ease;
 }
@@ -97,14 +92,13 @@ display: inline-block;
   position: absolute;
   left: 67%;
   top: 7%;
-  
 }
 
 .photo {
- top: -50px;
+  top: -50px;
 }
-.border{
-
+.border {
   height: 240px;
   top: 70px;
 }
+
